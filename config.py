@@ -145,6 +145,8 @@ layouts = [
     layout.MonadTall(
         margin=12,
         border_width=2,
+        border_normal=catppuccin['black'],
+        border_focus=catppuccin['mauve'],
         ),
     layout.Max(),
     #layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
