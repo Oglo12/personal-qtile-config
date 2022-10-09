@@ -33,6 +33,7 @@ from libqtile import hook
 
 terminal = "alacritty"
 default_font = "JetBrainsMono Nerd Font"
+bar_spacing = 3
 
 @hook.subscribe.startup_once
 def autostart():
@@ -170,7 +171,7 @@ extension_defaults = widget_defaults.copy()
 def get_widgets(primary=False):
     widgets = [
         widget.Spacer(
-            length=3,
+            length=8,
             background=catppuccin['black'],
             ),
         widget.TextBox(
@@ -197,6 +198,10 @@ def get_widgets(primary=False):
             fontsize=12,
             foreground=catppuccin["white"]
             ),
+         widget.Spacer(
+            length=12,
+            background=catppuccin['black'],
+            ),
          widget.TextBox(
             text="",
             padding=0,
@@ -215,6 +220,10 @@ def get_widgets(primary=False):
             padding=0,
             fontsize=30,
             foreground=catppuccin["sky"],
+            background=catppuccin['black'],
+            ),
+         widget.Spacer(
+            length=bar_spacing,
             background=catppuccin['black'],
             ),
          widget.TextBox(
@@ -236,6 +245,10 @@ def get_widgets(primary=False):
             foreground=catppuccin["peach"],
             background=catppuccin['black'],
             ),
+        widget.Spacer(
+            length=bar_spacing,
+            background=catppuccin['black'],
+            ),
         widget.TextBox(
             text="",
             padding=0,
@@ -255,9 +268,13 @@ def get_widgets(primary=False):
             foreground=catppuccin["maroon"],
             background=catppuccin['black'],
             ),
+        widget.Spacer(
+            length=8,
+            background=catppuccin['black'],
+            ),
             ]
     if primary:
-        widgets.insert(10, widget.Systray())
+        widgets.insert(5, widget.Systray())
     return widgets
 
 screens = [
