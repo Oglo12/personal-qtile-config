@@ -2,3 +2,4 @@
 
 nitrogen --restore &
 flameshot &
+picom --experimental-backends -b &
