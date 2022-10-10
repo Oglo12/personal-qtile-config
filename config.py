@@ -33,7 +33,9 @@ from libqtile import hook
 
 terminal = "alacritty"
 default_font = "JetBrainsMono Nerd Font"
-bar_spacing = 3
+bar_spacing = 20
+bar_padding = 20
+part_padding = 20
 
 @hook.subscribe.startup_once
 def autostart():
@@ -173,7 +175,7 @@ extension_defaults = widget_defaults.copy()
 def get_widgets(primary=False):
     widgets = [
         widget.Spacer(
-            length=8,
+            length=bar_padding,
             background=catppuccin['black'],
             ),
         widget.TextBox(
@@ -196,12 +198,16 @@ def get_widgets(primary=False):
             foreground=catppuccin["mauve"],
             background=catppuccin['black'],
             ),
+        widget.Spacer(
+            length=part_padding,
+            background=catppuccin['black']
+            ),
         widget.WindowName(
-            fontsize=12,
+            fontsize=15,
             foreground=catppuccin["white"]
             ),
          widget.Spacer(
-            length=12,
+            length=part_padding,
             background=catppuccin['black'],
             ),
          widget.TextBox(
@@ -271,12 +277,12 @@ def get_widgets(primary=False):
             background=catppuccin['black'],
             ),
         widget.Spacer(
-            length=8,
+            length=bar_padding,
             background=catppuccin['black'],
             ),
             ]
     if primary:
-        widgets.insert(5, widget.Systray())
+        widgets.insert(6, widget.Systray())
     return widgets
 
 screens = [
