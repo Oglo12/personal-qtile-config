@@ -5,3 +5,4 @@
   3. Alacritty - alacritty
   4. Nerd Fonts Complete - nerd-fonts-complete
   5. Firefox - firefox
+  6. Nitrogen - nitrogen
