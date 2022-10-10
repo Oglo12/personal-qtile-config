@@ -33,7 +33,7 @@ from libqtile import hook
 
 terminal = "alacritty"
 default_font = "JetBrainsMono Nerd Font"
-bar_spacing = 20
+bar_spacing = 8
 bar_padding = 20
 part_padding = 20
 
