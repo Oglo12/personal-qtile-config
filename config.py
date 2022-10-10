@@ -37,6 +37,10 @@ bar_spacing = 8
 bar_padding = 20
 part_padding = 20
 
+# Presets: , , ██, ░▒▓▓▒░
+bar_left = ""
+bar_right = ""
+
 @hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser("~/.config/qtile/autostart.sh")
@@ -179,7 +183,7 @@ def get_widgets(primary=False):
             background=catppuccin['black'],
             ),
         widget.TextBox(
-            text="",
+            text=bar_left,
             padding=0,
             fontsize=30,
             foreground=catppuccin["mauve"],
@@ -192,7 +196,7 @@ def get_widgets(primary=False):
             inactive=catppuccin["black"],
             ),
         widget.TextBox(
-            text="",
+            text=bar_right,
             padding=0,
             fontsize=30,
             foreground=catppuccin["mauve"],
@@ -211,7 +215,7 @@ def get_widgets(primary=False):
             background=catppuccin['black'],
             ),
          widget.TextBox(
-            text="",
+            text=bar_left,
             padding=0,
             fontsize=30,
             foreground=catppuccin["sky"],
@@ -224,7 +228,7 @@ def get_widgets(primary=False):
             background=catppuccin["sky"],
             ),
         widget.TextBox(
-            text="",
+            text=bar_right,
             padding=0,
             fontsize=30,
             foreground=catppuccin["sky"],
@@ -235,7 +239,7 @@ def get_widgets(primary=False):
             background=catppuccin['black'],
             ),
          widget.TextBox(
-            text="",
+            text=bar_left,
             padding=0,
             fontsize=30,
             foreground=catppuccin["peach"],
@@ -247,7 +251,7 @@ def get_widgets(primary=False):
             background=catppuccin["peach"],
             ),
         widget.TextBox(
-            text="",
+            text=bar_right,
             padding=0,
             fontsize=30,
             foreground=catppuccin["peach"],
@@ -258,7 +262,7 @@ def get_widgets(primary=False):
             background=catppuccin['black'],
             ),
         widget.TextBox(
-            text="",
+            text=bar_left,
             padding=0,
             fontsize=30,
             foreground=catppuccin["maroon"],
@@ -270,7 +274,7 @@ def get_widgets(primary=False):
             background=catppuccin["maroon"],
             ),
         widget.TextBox(
-            text="",
+            text=bar_right,
             padding=0,
             fontsize=30,
             foreground=catppuccin["maroon"],
