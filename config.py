@@ -107,7 +107,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "p", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
-    #DMenu Integration
+    # DMenu Integration
     Key([mod], "r", lazy.run_extension(extension.DmenuRun(
         dmenu_prompt = "$",
         background = catppuccin['black'],
