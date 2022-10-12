@@ -105,20 +105,11 @@ keys = [
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "p", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
-    # DMenu Integration
-    Key([mod], "r", lazy.run_extension(extension.DmenuRun(
-        dmenu_prompt = "$",
-        background = catppuccin['black'],
-        foreground = catppuccin['peach'],
-        selected_background = catppuccin['blue'],
-        selected_foreground = catppuccin['black'],
-        dmenu_bottom = False,
-        font = default_font,
-        fontsize = 15,
-        dmenu_lines = 10,
-    ))),
+    # Rofi Integration
+    Key([mod], "p", lazy.spawn("rofi -show run"), desc="Run a command."),
+    Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Launch an application."),
+    Key(["mod1"], "Tab", lazy.spawn("rofi -show window"), desc="Switch between windows."),
 ]
 
 groups = [Group(i) for i in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]]
