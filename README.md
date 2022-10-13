@@ -6,3 +6,6 @@
   4. Nerd Fonts Complete - nerd-fonts-complete
   5. Firefox - firefox
   6. Nitrogen - nitrogen
+  7. Lib Notify - libnotify
+  8. Notification Daemon - notification-daemon
+  9. Dunst - dunst
