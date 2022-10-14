@@ -111,7 +111,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 
     # Lockscreen
-    Key([mod], "l", lazy.spawn("betterlockscreen -l dimblur"), desc="Launch the lockscreen."),
+    Key([mod], "l", lazy.spawn("betterlockscreen -l"), desc="Launch the lockscreen."),
 
     # Rofi Integration
     Key([mod], "p", lazy.spawn("rofi -show run"), desc="Run a command."),
