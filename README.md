@@ -11,3 +11,8 @@
   9. Dunst - dunst
   10. Better Lock Screen - betterlockscreen
   11. Network Manager - networkmanager
+
+> Other Configurations Used For This Rice
+  1. rofi - https://github.com/Oglo12/personal-rofi-config/
+  2. picom - https://github.com/Oglo12/personal-picom-config/
+  3. dunst - https://github.com/Oglo12/personal-dunst-config/
