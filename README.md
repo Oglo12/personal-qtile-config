@@ -17,6 +17,9 @@
   2. picom - https://github.com/Oglo12/personal-picom-config/
   3. dunst - https://github.com/Oglo12/personal-dunst-config/
 
+> Optional Extras
+  1. The Wallpapers - https://github.com/Oglo12/just-some-wallpapers/
+
 > How to Update your Version of This Rice
   1. Open a terminal.
   2. Make sure Git is installed.
