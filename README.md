@@ -10,3 +10,4 @@
   8. Notification Daemon - notification-daemon
   9. Dunst - dunst
   10. Better Lock Screen - betterlockscreen
+  11. Network Manager - networkmanager
