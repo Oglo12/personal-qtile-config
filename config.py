@@ -31,7 +31,11 @@ import subprocess
 import os
 from libqtile import hook
 
+# Programs
 terminal = "alacritty"
+web_browser = "firefox"
+
+# Quick Settings
 default_font = "JetBrainsMono Nerd Font"
 bar_spacing = 8
 bar_padding = 20
@@ -99,7 +103,7 @@ keys = [
     ),
     Key(["control", "mod1"], "t", lazy.spawn(terminal), desc="Launch terminal #1"),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal #2"),
-    Key([mod], "w", lazy.spawn("firefox"), desc="launch firefox"),
+    Key([mod], "w", lazy.spawn(web_browser), desc="Launch the web browser."),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
