@@ -16,3 +16,11 @@
   1. rofi - https://github.com/Oglo12/personal-rofi-config/
   2. picom - https://github.com/Oglo12/personal-picom-config/
   3. dunst - https://github.com/Oglo12/personal-dunst-config/
+
+> How to Update your Version of This Rice
+  1. Open a terminal.
+  2. Make sure Git is installed.
+  3. Run this command:
+     ```
+     sh ~/.config/qtile/update-configs.sh
+     ```
