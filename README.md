@@ -11,6 +11,9 @@
   9. Dunst - dunst
   10. Better Lock Screen - betterlockscreen
   11. Network Manager - networkmanager
+  12. Bluez - bluez
+  13. Bluez Utils - bluez-utils
+  14. Blueman - blueman
 
 > Other Configurations Used For This Rice
   1. rofi - https://github.com/Oglo12/personal-rofi-config/
