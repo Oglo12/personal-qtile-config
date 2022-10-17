@@ -15,6 +15,9 @@
   13. Bluez Utils - bluez-utils
   14. Blueman - blueman
 
+> Recommended Programs to Install
+  1. LX Appearance - lxappearance ~ Changing The GNOME Theme
+
 > Other Configurations Used For This Rice
   1. rofi - https://github.com/Oglo12/personal-rofi-config/
   2. picom - https://github.com/Oglo12/personal-picom-config/
