@@ -14,6 +14,7 @@
   12. Bluez - bluez
   13. Bluez Utils - bluez-utils
   14. Blueman - blueman
+  15. Papirus Icon Theme - papirus-icon-theme
 
 > Recommended Programs to Install
   1. LX Appearance - lxappearance ~ Changing The GNOME Theme
