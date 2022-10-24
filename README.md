@@ -15,6 +15,7 @@
   13. Bluez Utils - bluez-utils
   14. Blueman - blueman
   15. Papirus Icon Theme - papirus-icon-theme
+  16. Noto Fonts Emojis - noto-fonts-emoji
 
 > Recommended Programs to Install
   1. LX Appearance - lxappearance ~ Changing The GNOME Theme
