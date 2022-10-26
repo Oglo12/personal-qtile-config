@@ -37,14 +37,14 @@ web_browser = "firefox"
 
 # Quick Settings
 default_font = "JetBrainsMono Nerd Font"
-bar_spacing = 8
+bar_spacing = 12
 bar_padding = 20
-part_padding = 20
-bar_height = 25
+part_padding = 22
+bar_height = 28
 
 # Presets: , , ██, ░▒▓▓▒░, 
-bar_left = ""
-bar_right = ""
+bar_left = ""
+bar_right = ""
 
 @hook.subscribe.startup_once
 def autostart():
