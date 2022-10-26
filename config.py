@@ -40,6 +40,7 @@ default_font = "JetBrainsMono Nerd Font"
 bar_spacing = 8
 bar_padding = 20
 part_padding = 20
+bar_height = 28
 
 # Presets: , , ██, ░▒▓▓▒░
 bar_left = ""
@@ -322,7 +323,7 @@ screens = [
     Screen(
         top=bar.Bar(
             get_widgets(primary=True),
-            22,
+            bar_height,
             background=catppuccin['black'],
         ),
     ),
