@@ -42,9 +42,9 @@ bar_padding = 20
 part_padding = 20
 bar_height = 25
 
-# Presets: , , ██, ░▒▓▓▒░
-bar_left = ""
-bar_right = ""
+# Presets: , , ██, ░▒▓▓▒░, 
+bar_left = ""
+bar_right = ""
 
 @hook.subscribe.startup_once
 def autostart():
