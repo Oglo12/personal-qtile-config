@@ -40,7 +40,7 @@ default_font = "JetBrainsMono Nerd Font"
 bar_spacing = 8
 bar_padding = 20
 part_padding = 20
-bar_height = 28
+bar_height = 25
 
 # Presets: , , ██, ░▒▓▓▒░
 bar_left = ""
