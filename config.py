@@ -299,7 +299,7 @@ def get_widgets(primary=False):
             background=catppuccin['black'],
             ),
         widget.Clock(
-                format=" %I:%M %p",
+            format=" %I:%M %p",
             foreground=catppuccin["black"],
             background=catppuccin["maroon"],
             ),
