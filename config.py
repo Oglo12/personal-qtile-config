@@ -42,6 +42,7 @@ bar_spacing = 12
 bar_padding = 20
 part_padding = 22
 bar_height = 28
+window_gap_size = 15
 
 # Presets: , , ██, ░▒▓▓▒░, 
 bar_left = ""
@@ -150,7 +151,7 @@ for g, k in zip(groups, group_hotkeys):
 
 layouts = [
     layout.MonadTall(
-        margin=12,
+        margin=window_gap_size,
         border_width=2,
         border_normal=catppuccin['black'],
         border_focus=catppuccin['mauve'],
