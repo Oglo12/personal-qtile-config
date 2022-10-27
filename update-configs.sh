@@ -16,6 +16,10 @@ notify-send "Rice Update Script" "Updating Rofi."
 cd ~/.config/rofi/
 git pull origin main
 
+notify-send "Rice Update Script" "Updating Alacritty."
+cd ~/.config/alacritty/
+git pull origin main
+
 cd ~
 
 notify-send "Rice Update Script" "Done! :-D"
