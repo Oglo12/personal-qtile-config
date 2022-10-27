@@ -178,7 +178,7 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
-def get_widgets(primary=False):
+def get_widgets_top(primary=False):
     widgets = [
         widget.Spacer(
             length=bar_padding,
@@ -202,6 +202,28 @@ def get_widgets(primary=False):
             padding=0,
             fontsize=30,
             foreground=catppuccin["mauve"],
+            background=catppuccin['black'],
+            ),
+        widget.Spacer(
+            length=bar_spacing,
+            background=catppuccin['black'],
+            ),
+        widget.TextBox(
+            text=bar_left,
+            padding=0,
+            fontsize=30,
+            foreground=catppuccin["gray"],
+            background=catppuccin['black'],
+            ),
+        widget.Systray(
+            background=catppuccin["gray"],
+            foreground=catppuccin['black'],
+            ),
+        widget.TextBox(
+            text=bar_right,
+            padding=0,
+            fontsize=30,
+            foreground=catppuccin["gray"],
             background=catppuccin['black'],
             ),
         widget.Spacer(
@@ -236,36 +258,6 @@ def get_widgets(primary=False):
             foreground=catppuccin["sky"],
             background=catppuccin['black'],
             ),
-         # widget.Spacer(
-         #    length=bar_spacing,
-         #    background=catppuccin['black'],
-         #    ),
-         # widget.TextBox(
-         #     text=bar_left,
-         #     padding=0,
-         #     fontsize=30,
-         #    foreground=catppuccin["green"],
-         #    background=catppuccin['black'],
-         #    ),
-         # widget.Battery(
-         #    battery = 0,
-         #    charge_char='^',
-         #    discharge_char='v',
-         #    empty_char = 'x',
-         #    full_char = '=',
-         #    notification_timeout = 10,
-         #    unknown_char = '?',
-         #    update_interval = 10,
-         #    background = catppuccin['green'],
-         #    foreground = catppuccin['black'],
-         #    ),
-         # widget.TextBox(
-         #     text=bar_right,
-         #     padding=0,
-         #     fontsize=30,
-         #    foreground=catppuccin["green"],
-         #    background=catppuccin['black'],
-         #    ),
          widget.Spacer(
             length=bar_spacing,
             background=catppuccin['black'],
@@ -318,13 +310,53 @@ def get_widgets(primary=False):
             ),
             ]
     if primary:
-        widgets.insert(6, widget.Systray())
+        pass
+    return widgets
+
+def get_widgets_bottom(primary=False):
+    widgets = [
+        widget.Spacer(
+            length=bar_padding,
+            background=catppuccin['black'],
+            ),
+         widget.TextBox(
+            text=bar_left,
+            padding=0,
+            fontsize=30,
+            foreground=catppuccin["red"],
+            background=catppuccin['black'],
+            ),
+         widget.TaskList(
+            background = catppuccin['red'],
+            foreground = catppuccin['black'],
+            highlight_method = 'block',
+            border = catppuccin['gray']
+            ),
+         widget.TextBox(
+             text=bar_right,
+             padding=0,
+             fontsize=30,
+             foreground=catppuccin["red"],
+             background=catppuccin['black'],
+             ),
+        widget.Spacer(
+            length=bar_padding + 1000,
+            background=catppuccin['black']
+            ),
+            ]
+    if primary:
+        pass
     return widgets
 
 screens = [
     Screen(
         top=bar.Bar(
-            get_widgets(primary=True),
+            get_widgets_top(primary=True),
+            bar_height,
+            background=catppuccin['black'],
+        ),
+        bottom=bar.Bar(
+            get_widgets_bottom(primary=True),
             bar_height,
             background=catppuccin['black'],
         ),
