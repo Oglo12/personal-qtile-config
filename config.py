@@ -37,6 +37,7 @@ web_browser = "firefox"
 
 # Quick Settings
 default_font = "JetBrainsMono Nerd Font"
+default_font_size = 18
 bar_spacing = 12
 bar_padding = 20
 part_padding = 22
@@ -170,7 +171,7 @@ layouts = [
 
 widget_defaults = dict(
     font=default_font,
-    fontsize=16,
+    fontsize=default_font_size,
     padding=2,
     forground=catppuccin["black"],
 )
