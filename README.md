@@ -24,6 +24,7 @@
   1. rofi - https://github.com/Oglo12/personal-rofi-config/
   2. picom - https://github.com/Oglo12/personal-picom-config/
   3. dunst - https://github.com/Oglo12/personal-dunst-config/
+  4. alacritty - https://github.com/Oglo12/personal-alacritty-config/
 
 > Optional Extras
   1. The Wallpapers - https://github.com/Oglo12/just-some-wallpapers/
