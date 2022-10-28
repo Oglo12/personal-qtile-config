@@ -121,6 +121,10 @@ keys = [
     Key([mod], "p", lazy.spawn("rofi -show run"), desc="Run a command."),
     Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Launch an application."),
     Key(["mod1"], "Tab", lazy.spawn("rofi -show window"), desc="Switch between windows."),
+
+    # Polybar Stuff
+    Key([mod], "b", lazy.spawn("polybar main")),
+    Key([mod, "shift"], "b", lazy.spawn("pkill polybar"))
 ]
 
 groups = [Group(i) for i in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]]
