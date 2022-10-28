@@ -124,7 +124,11 @@ keys = [
 
     # Polybar Stuff
     Key([mod], "b", lazy.spawn("polybar main")),
-    Key([mod, "shift"], "b", lazy.spawn("pkill polybar"))
+    Key([mod, "shift"], "b", lazy.spawn("pkill polybar")),
+
+    # Picom Stuff
+    Key([mod, "control"], "p", lazy.spawn("picom --experimental-backends -b")),
+    Key([mod, "shift"], "p", lazy.spawn("pkill picom")),
 ]
 
 groups = [Group(i) for i in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]]
