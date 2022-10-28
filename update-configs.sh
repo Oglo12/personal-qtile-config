@@ -20,6 +20,10 @@ notify-send "Rice Update Script" "Updating Alacritty."
 cd ~/.config/alacritty/
 git pull origin main
 
+notify-send "Rice Update Script" "Updating Polybar."
+cd ~/.config/polybar/
+git pull origin main
+
 cd ~
 
 notify-send "Rice Update Script" "Done! :-D"
