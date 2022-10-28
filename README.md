@@ -16,6 +16,7 @@
   14. Blueman - blueman
   15. Papirus Icon Theme - papirus-icon-theme
   16. Noto Fonts Emojis - noto-fonts-emoji
+  17. Polybar - polybar
 
 > Recommended Programs to Install
   1. LX Appearance - lxappearance ~ Changing The GNOME Theme
@@ -25,6 +26,7 @@
   2. picom - https://github.com/Oglo12/personal-picom-config/
   3. dunst - https://github.com/Oglo12/personal-dunst-config/
   4. alacritty - https://github.com/Oglo12/personal-alacritty-config/
+  5. polybar - https://github.com/Oglo12/personal-polybar-config/
 
 > Optional Extras
   1. The Wallpapers - https://github.com/Oglo12/just-some-wallpapers/
