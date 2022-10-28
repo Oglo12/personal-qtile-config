@@ -356,11 +356,11 @@ screens = [
             bar_top_height,
             background=catppuccin['black'],
         ),
-        bottom=bar.Bar(
-            get_widgets_bottom(primary=True),
-            bar_bottom_height,
-            background=catppuccin['black'],
-        ),
+        #bottom=bar.Bar(
+        #    get_widgets_bottom(primary=True),
+        #    bar_bottom_height,
+        #    background=catppuccin['black'],
+        #),
     ),
 ]
 
