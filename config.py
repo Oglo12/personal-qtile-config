@@ -41,7 +41,8 @@ default_font_size = 18
 bar_spacing = 12
 bar_padding = 20
 part_padding = 22
-bar_height = 28
+bar_top_height = 28
+bar_bottom_height = 28
 window_gap_size = 15
 
 # Presets: , , ██, ░▒▓▓▒░, 
@@ -352,12 +353,12 @@ screens = [
     Screen(
         top=bar.Bar(
             get_widgets_top(primary=True),
-            bar_height,
+            bar_top_height,
             background=catppuccin['black'],
         ),
         bottom=bar.Bar(
             get_widgets_bottom(primary=True),
-            bar_height,
+            bar_bottom_height,
             background=catppuccin['black'],
         ),
     ),
