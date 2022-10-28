@@ -351,11 +351,11 @@ def get_widgets_bottom(primary=False):
 
 screens = [
     Screen(
-        top=bar.Bar(
-            get_widgets_top(primary=True),
-            bar_top_height,
-            background=catppuccin['black'],
-        ),
+        #top=bar.Bar(
+        #    get_widgets_top(primary=True),
+        #    bar_top_height,
+        #    background=catppuccin['black'],
+        #),
         #bottom=bar.Bar(
         #    get_widgets_bottom(primary=True),
         #    bar_bottom_height,
