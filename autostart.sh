@@ -7,3 +7,4 @@ flameshot &
 picom --experimental-backends -b &
 dunst &
 polybar main &
+lxsession &
