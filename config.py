@@ -122,15 +122,18 @@ keys = [
     Key(["mod1"], "Tab", lazy.spawn("rofi -show window"), desc="Switch between windows."),
 
     # Polybar Stuff
-    Key([mod], "b", lazy.spawn("polybar main")),
-    Key([mod, "shift"], "b", lazy.spawn("pkill polybar")),
+    Key([mod], "b", lazy.spawn("polybar main"), desc="Spawn Polybar."),
+    Key([mod, "shift"], "b", lazy.spawn("pkill polybar"), desc="Kill Polybar."),
 
     # Picom Stuff
-    Key([mod, "control"], "p", lazy.spawn("picom --experimental-backends -b")),
-    Key([mod, "shift"], "p", lazy.spawn("pkill picom")),
+    Key([mod, "control"], "p", lazy.spawn("picom --experimental-backends -b"), desc="Start Picom."),
+    Key([mod, "shift"], "p", lazy.spawn("pkill picom"), desc="Stop Picom."),
 
     # Poweroff Menu
-    Key([mod], "p", lazy.spawn(os.path.expanduser("~/.config/qtile/power_menu.sh"))),
+    Key([mod], "p", lazy.spawn(os.path.expanduser("~/.config/qtile/power_menu.sh"), desc="Launch the power menu.")),
+
+    # Flameshot
+    Key([mod, "shift"], "s", lazy.spawn("flameshot gui"), desc="Take a screenshot."),
 ]
 
 groups = [Group(i) for i in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]]
