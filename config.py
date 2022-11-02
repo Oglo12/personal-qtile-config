@@ -130,7 +130,7 @@ keys = [
     Key([mod, "shift"], "p", lazy.spawn("pkill picom"), desc="Stop Picom."),
 
     # Poweroff Menu
-    Key([mod], "p", lazy.spawn(os.path.expanduser("~/.config/qtile/power_menu.sh"), desc="Launch the power menu.")),
+    Key([mod], "p", lazy.spawn(os.path.expanduser("~/.config/qtile/power_menu.sh")), desc="Launch the power menu."),
 
     # Flameshot
     Key([mod, "shift"], "s", lazy.spawn("flameshot gui"), desc="Take a screenshot."),
