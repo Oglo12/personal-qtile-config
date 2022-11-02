@@ -18,6 +18,7 @@
   16. Noto Fonts Emojis - noto-fonts-emoji
   17. Polybar - polybar
   18. LXDE Session Polkit - lxsession
+  19. Flameshot - flameshot
 
 > Recommended Programs to Install
   1. LX Appearance - lxappearance ~ Changing The GNOME Theme
