@@ -118,7 +118,6 @@ keys = [
     Key([mod], "l", lazy.spawn("betterlockscreen -l"), desc="Launch the lockscreen."),
 
     # Rofi Integration
-    Key([mod], "p", lazy.spawn("rofi -show run"), desc="Run a command."),
     Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Launch an application."),
     Key(["mod1"], "Tab", lazy.spawn("rofi -show window"), desc="Switch between windows."),
 
@@ -131,7 +130,7 @@ keys = [
     Key([mod, "shift"], "p", lazy.spawn("pkill picom")),
 
     # Poweroff Menu
-    Key([mod], "o", lazy.spawn(os.path.expanduser("~/.config/qtile/power_menu.sh"))),
+    Key([mod], "p", lazy.spawn(os.path.expanduser("~/.config/qtile/power_menu.sh"))),
 ]
 
 groups = [Group(i) for i in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]]
