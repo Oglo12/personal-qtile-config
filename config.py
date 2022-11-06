@@ -134,6 +134,9 @@ keys = [
 
     # Flameshot
     Key([mod, "shift"], "s", lazy.spawn("flameshot gui"), desc="Take a screenshot."),
+
+    # XKill
+    Key([mod], "x", lazy.spawn("xkill"), desc="Launches XKill."),
 ]
 
 groups = [Group(i) for i in ["1", "2", "3", "4", "5", "6", "7", "8", "9"]]
